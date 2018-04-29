@@ -10,7 +10,9 @@ namespace OddNumbers
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 10; i++)
+            Console.WriteLine("Write limit");
+            string a = Console.ReadLine();
+            for (int i = 0; i < Convert.ToInt32(a); i++)
             {
                 for (int j = 1; j <= i; j++)
                 {
@@ -21,11 +23,13 @@ namespace OddNumbers
                             Console.Write(j);
 
                         }
+
+                        
                     }
                 }
-                Console.WriteLine();
+               Console.WriteLine("");
             }
-
+            
             Console.ReadKey();
         }
     }
